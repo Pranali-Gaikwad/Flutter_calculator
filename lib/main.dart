@@ -62,8 +62,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
                         } else if (double.parse(value) > 99999999999.0) {
                           return 'Enter Principal Amount below 99999999999';
                         }
-                        return 'Enter Valid Principal Amount';
-                      },
+                        },
                       decoration: InputDecoration(
                           labelText: "Principal",
                           labelStyle: textStyle,
@@ -83,7 +82,6 @@ class _SimpleInterestState extends State<SimpleInterest> {
                         }else if(double.parse(value)>= 100.0){
                           return 'Enter Rate Percentage below 100';
                         }
-                        return 'Enter Valid Rate Percentage';
                       },
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -106,7 +104,7 @@ class _SimpleInterestState extends State<SimpleInterest> {
                             validator: (String value) {
                               if (value.isEmpty) {
                                 return 'Enter term in Years';
-                              } return 'Enter Valid term';
+                              }
                             },
                             decoration: InputDecoration(
                                 labelText: "Term",
